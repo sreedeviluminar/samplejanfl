@@ -30,7 +30,6 @@ class ListWithBuilderState extends State {
         title: Text("List 3"),
       ),
       body: ListView.builder(
-
         itemBuilder: (context, index) {
 
           return Card(
