@@ -29,7 +29,13 @@ class LoginFormState extends State<LoginForm> {
           key: formKey,
           child: Column(
             children: [
+
               TextFormField(
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey, width: 2.0),
+                ),
+                  hintText: 'Email',),
                 validator: (input){
                   if(input!.isEmpty || numvalues.hasMatch(input) ){
                     return "Please fill all the fields";
