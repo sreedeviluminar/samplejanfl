@@ -40,12 +40,15 @@ class SelectedCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-                child: Icon(
-              datas.icon,
-              size: 50,
+              child: Icon(
+                datas.icon,
+                size: 50,
+              ),
             ),
+            Text(
+              datas.title,
+              style: TextStyle(fontSize: 16),
             ),
-            Text(datas.title,style: TextStyle(fontSize: 16),),
           ],
         ),
       ),
